@@ -2,7 +2,8 @@ var app = new Vue({
   el: '#todo',
   data: {
       todo:"",
-      todos: []
+      todos: [],
+      font: ""
   },
   computed: {
       lefts: function(){

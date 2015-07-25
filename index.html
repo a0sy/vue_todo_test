@@ -3,18 +3,19 @@
 <head>
     <meta charset="utf-8">
     <title>To-Do List with Vue.js</title>
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <script type="text/javascript" src="bower_components/vue/dist/vue.min.js"></script>
 </head>
 <body>
   <div id="todo">
       <h1>To-Do List with Vue.js</h1>
+          <input v-model="todo" placeholder="Add a ToDo item"/>
+          <input type="button" v-on="click: addTodo" value="add todo" />
       <div v-repeat="t : todos | orderBy 'isDone'">
           <input type="checkbox" v-model="t.isDone" />
-          {{$index}}: {{t.title}}
+          <label class="complete">{{$index}}: {{t.title}}</label>
       </div>
-      <input v-model="todo" placeholder="Add a ToDo item"/>
-      <input type="button" v-on="click: addTodo" value="add todo" />
+      <hr />
       <div>
           left {{lefts}} tasks.
       </div>
