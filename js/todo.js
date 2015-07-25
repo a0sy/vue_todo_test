@@ -1,6 +1,7 @@
 var app = new Vue({
   el: '#todo',
   data: {
+      todo:"input todo",
       todos: []
   },
   computed: {
@@ -17,7 +18,8 @@ var app = new Vue({
   },
   methods:{
       addTodo: function(){
-          this.todos.push({ isDone:false , title:"task-" + this.todos.length });
+          //this.todos.push({ isDone:false , title:"task-" + this.todos.length });
+          this.todos.push({ isDone:false , title:this.todo });
       }
   }
 });

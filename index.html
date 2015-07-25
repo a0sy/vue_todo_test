@@ -2,16 +2,17 @@
 <html lang="ja">
 <head>
     <meta charset="utf-8">
-    <title>My Todos</title>
+    <title>To-Do List with Vue.js</title>
     <script type="text/javascript" src="bower_components/vue/dist/vue.min.js"></script>
 </head>
 <body>
   <div id="todo">
-      <h1>My Todos</h1>
+      <h1>To-Do List with Vue.js</h1>
       <div v-repeat="t : todos | orderBy 'isDone'">
           <input type="checkbox" v-model="t.isDone" />
           {{$index}}:{{t.title}}
       </div>
+      <input v-model="todo" />
       <input type="button" v-on="click: addTodo" value="add todo" />
       <div>
           left {{lefts}} tasks.
