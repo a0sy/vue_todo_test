@@ -1,0 +1,20 @@
+{
+  "name": "vue_2nd_step",
+  "version": "0.0.0",
+  "authors": [
+    "a0sy <a0sy.gl@gmail.com>"
+  ],
+  "description": "http://qiita.com/icoxfog417/items/49f7301be502bc2ad897の2nd Step",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "vue": "~0.12.7"
+  }
+}
