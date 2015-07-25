@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>To-Do List with Vue.js</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
     <script type="text/javascript" src="bower_components/vue/dist/vue.min.js"></script>
 </head>
 <body>
@@ -12,7 +13,7 @@
           <input type="checkbox" v-model="t.isDone" />
           {{$index}}:{{t.title}}
       </div>
-      <input v-model="todo" />
+      <input v-model="todo" placeholder="Add a ToDo item"/>
       <input type="button" v-on="click: addTodo" value="add todo" />
       <div>
           left {{lefts}} tasks.
