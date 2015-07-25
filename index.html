@@ -11,7 +11,7 @@
       <h1>To-Do List with Vue.js</h1>
       <div v-repeat="t : todos | orderBy 'isDone'">
           <input type="checkbox" v-model="t.isDone" />
-          {{$index}}:{{t.title}}
+          {{$index}}: {{t.title}}
       </div>
       <input v-model="todo" placeholder="Add a ToDo item"/>
       <input type="button" v-on="click: addTodo" value="add todo" />
